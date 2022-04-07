@@ -19,7 +19,7 @@
     let newWord; // 현재단어
 
     const onClickButton = () => {
-        if((!word || word[word.length - 1] === newWord[0]) && newWord.length >= 3){
+        if((!word || word[word.length - 1] === newWord[0]) && newWord.length === 3){
             // 제시어가 비어있거나 입력한단어가 올바른가?
             // 제시어의 길이가 3글자가 넘는가?
             word = newWord; // 입력한 단어가 제시어가 된다.

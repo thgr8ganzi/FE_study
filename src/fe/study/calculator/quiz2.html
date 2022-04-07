@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>1분퀴즈</title>
+</head>
+<body>
+<script>
+    function test(){
+        let result = "";
+        if(a){
+            if(!b){
+                result = "c";
+            }
+        }else {
+            result = "a";
+        }
+        result += "b";
+        return result;
+    }
+</script>
+<script>
+    function test(){
+        let result = "";
+        if(!a){
+            result = "a";
+            result += b;
+            return result;
+        }
+        if(!b){
+            result = "c";
+        }
+        result += b;
+        return result;
+    }
+</script>
+</body>
+</html>
