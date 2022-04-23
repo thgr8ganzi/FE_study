@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const fun = (값) => () => {
+        console.log('고차 함수입니다', 값);
+    }
+    태그.addEventListener('click', fun(1));
+
+    //================================================
+
+    const fun = (값) => () => {
+        console.log('고차 함수입니다', 값);
+    }
+    const fun1 = fun(1);
+    태그.addEventListener('click', fun1);
+    태그.removeEventListener('click', fun1);
+</script>
+</body>
+</html>
